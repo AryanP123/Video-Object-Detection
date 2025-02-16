@@ -2,6 +2,12 @@
 
 A Python-based solution for detecting objects in video streams using Ultralytics YOLOv8. Detects 80+ common objects (people, vehicles, animals, etc.) and displays them with bounding boxes and labels.
 
+## 📺 Demo 
+
+[![YOLOv8 Video Object Detection Demo](https://img.youtube.com/vi/DSTCFva7BrY/0.jpg)](https://youtu.be/DSTCFva7BrY)
+
+*Click the image above to watch the demo video*
+
 
 ## Technologies Used
 - **Python 3.8+**
