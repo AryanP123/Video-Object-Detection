@@ -40,7 +40,7 @@ class VideoObjectDetector:
 def main():
     # Configuration
     MODEL_PATH = "yolo-Weights/yolov8n.pt"
-    VIDEO_PATH = "traffic.mp4"
+    VIDEO_PATH = "highway-free-footage.mp4"
     
     # COCO classes (corrected - removed "cheetah")
     COCO_CLASSES = [
