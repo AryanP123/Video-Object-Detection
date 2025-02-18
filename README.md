@@ -4,7 +4,7 @@ A Python-based solution for detecting objects in video streams using Ultralytics
 
 ## 📺 Demo 
 
-[![YOLOv8 Video Object Detection Demo](https://img.youtube.com/vi/DSTCFva7BrY/0.jpg)](https://youtu.be/DSTCFva7BrY)
+[![YOLOv8 Video Object Detection Demo](https://img.youtube.com/vi/t55-aXkhzfQ/0.jpg)](https://youtu.be/t55-aXkhzfQ)
 
 *Click the image above to watch the demo video*
 
