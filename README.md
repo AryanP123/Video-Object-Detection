@@ -41,34 +41,49 @@ A Python-based solution for detecting objects in video streams using Ultralytics
 
 1. **Clone Repository**
 
-2. **Set Up Virtual Environment**
-```bash
-python -m venv venv
-source venv/bin/activate  # Linux/MacOS
-venv\Scripts\activate     # Windows
-```
+   ```bash
+   git clone <repository_url>
+   ```
 
-3. **Install Dependencies**
-```bash
-pip install ultralytics Flask
-```
+2. **Choose a Deployment Method:**
 
+   **Option 1: Using Docker Compose**
+
+   * **Start Application:**
+     ```bash
+     docker-compose up -d
+     ```
+
+   * **Access Web Interface:** Open `http://localhost:3000` (or the port specified in your `docker-compose.yml`) in your browser.
+
+   **Option 2: Using a Virtual Environment (without Docker)**
+
+   * **Set Up Virtual Environment:**
+     ```bash
+     python -m venv venv
+     source venv/bin/activate  # Linux/MacOS
+     venv\Scripts\activate     # Windows
+     ```
+
+   * **Install Dependencies:**
+     ```bash
+     pip install -r requirements.txt
+     ```
+
+   * **Start Development Server:**
+     ```bash
+     python app.py
+     ```
+
+   * **Access Web Interface:** Open `http://localhost:3000` (or the port your Flask app is running on) in your browser.
 
 ### Usage
 
-1. **Start Development Server**
-```bash
-python app.py
-```
+1. **Upload & Process Video**
 
-2. **Access Web Interface**  
-Open `http://localhost:5000` in your browser
-
-3. **Upload & Process Video**
-1. Click "Choose File" and select an MP4 video
-2. Click "Upload & Process"
-3. View real-time detection results
-4. Reload page to process new video
+   1. Click "Choose File" and select an MP4 video.
+   2. Click "Upload & Process".
+   3. View real-time detection results.
 
 
 ## Acknowledgments

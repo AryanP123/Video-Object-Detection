@@ -15,6 +15,6 @@ RUN pip install --no-cache-dir \
     torch \
     opencv-python-headless
 
-EXPOSE 5000
+EXPOSE 3000
 
 CMD ["python", "app.py"]
