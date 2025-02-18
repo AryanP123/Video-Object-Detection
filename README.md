@@ -35,9 +35,6 @@ A Python-based solution for detecting objects in video streams using Ultralytics
 3. **Visualization**:
    - Draws bounding boxes around detected objects
    - Labels objects with text
-4. **Termination**:
-   - Press `ESC` to exit anytime
-   - Automatic cleanup on exit
 
 
 ### Installation
