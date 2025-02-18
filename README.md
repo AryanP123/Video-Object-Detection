@@ -65,7 +65,7 @@ python app.py
 ```
 
 2. **Access Web Interface**  
-Open `http://localhost:5001` in your browser
+Open `http://localhost:5000` in your browser
 
 3. **Upload & Process Video**
 1. Click "Choose File" and select an MP4 video
