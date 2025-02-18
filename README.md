@@ -12,19 +12,27 @@ A Python-based solution for detecting objects in video streams using Ultralytics
 ## Technologies
 
 **Backend:**
-- Python 3.8+
-- Flask (Web Framework)
-- YOLOv8 (Object Detection)
-- OpenCV (Video Processing)
-- PyTorch (Deep Learning Backend)
+
+* Python 3.8+
+* Flask (Web Framework)
+* YOLOv8 (Object Detection)
+* OpenCV (Video Processing)
+* PyTorch (Deep Learning Backend)
 
 **Frontend:**
-- HTML5/CSS3
-- JavaScript
-- Multipart JPEG Streaming
+
+* HTML5/CSS3
+* JavaScript
 
 **Dataset:**
-- COCO (Common Objects in Context) 80-class
+
+* COCO (Common Objects in Context) 80-class
+
+**Deployment:**
+
+* Docker 
+* Kubernetes
+* Virtual Environment
 
 
 ## How It Works
@@ -37,7 +45,7 @@ A Python-based solution for detecting objects in video streams using Ultralytics
    - Labels objects with text
 
 
-### Installation
+## Installation
 
 1. **Clone Repository**
 
@@ -47,16 +55,27 @@ A Python-based solution for detecting objects in video streams using Ultralytics
 
 2. **Choose a Deployment Method:**
 
-   **Option 1: Using Docker Compose**
+   **Option 1: Using Kubernetes**
+
+   * **Apply Deployment and Service:**
+     ```bash
+     kubectl apply -f deployment.yaml
+     kubectl apply -f service.yaml
+     ```
+
+   * **Access Web Interface:** Open `http://localhost`
+
+
+   **Option 2: Using Docker Compose**
 
    * **Start Application:**
      ```bash
      docker-compose up -d
      ```
 
-   * **Access Web Interface:** Open `http://localhost:3000` (or the port specified in your `docker-compose.yml`) in your browser.
+   * **Access Web Interface:** Open `http://localhost:3000` in your browser.
 
-   **Option 2: Using a Virtual Environment (without Docker)**
+   **Option 3: Using a Virtual Environment (without Docker)**
 
    * **Set Up Virtual Environment:**
      ```bash
@@ -75,7 +94,7 @@ A Python-based solution for detecting objects in video streams using Ultralytics
      python app.py
      ```
 
-   * **Access Web Interface:** Open `http://localhost:3000` (or the port your Flask app is running on) in your browser.
+   * **Access Web Interface:** Open `http://localhost:3000` in your browser.
 
 ### Usage
 
