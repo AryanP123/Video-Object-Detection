@@ -9,12 +9,22 @@ A Python-based solution for detecting objects in video streams using Ultralytics
 *Click the image above to watch the demo video*
 
 
-## Technologies Used
-- **Python 3.8+**
-- **Ultralytics YOLOv8** - Object detection model
-- **OpenCV** - Video processing and visualization
-- **PyTorch** - Deep learning backend
-- **COCO Dataset** - 80-class object detection dataset
+## Technologies
+
+**Backend:**
+- Python 3.8+
+- Flask (Web Framework)
+- YOLOv8 (Object Detection)
+- OpenCV (Video Processing)
+- PyTorch (Deep Learning Backend)
+
+**Frontend:**
+- HTML5/CSS3
+- JavaScript
+- Multipart JPEG Streaming
+
+**Dataset:**
+- COCO (Common Objects in Context) 80-class
 
 
 ## How It Works
@@ -30,50 +40,38 @@ A Python-based solution for detecting objects in video streams using Ultralytics
    - Automatic cleanup on exit
 
 
-## Setup Instructions
+### Installation
 
-### 1. Prerequisites
-- Python 3.8 or later
-- pip package manager
+1. **Clone Repository**
 
-### 2. Create Virtual Environment
+2. **Set Up Virtual Environment**
 ```bash
-python -m venv objdetect_env
-source objdetect_env/bin/activate  # Linux/Mac
-objdetect_env\Scripts\activate  # Windows
+python -m venv venv
+source venv/bin/activate  # Linux/MacOS
+venv\Scripts\activate     # Windows
 ```
 
-### 3. Install Dependencies
+3. **Install Dependencies**
 ```bash
-pip install torch ultralytics opencv-python
+pip install ultralytics Flask
 ```
 
-## Usage
 
-### 1. Configure Video Input
-- Replace `traffic.mp4` with your video path:
-  ```python
-  # In main() function:
-  VIDEO_PATH = "your-video.mp4"  # Update this line
-  ```
+### Usage
 
-### 2. Run the Detector
+1. **Start Development Server**
 ```bash
-python object_detector.py
+python app.py
 ```
 
-### 3. Controls
-- Press `ESC` to exit
-- Video will automatically stop at end
+2. **Access Web Interface**  
+Open `http://localhost:5001` in your browser
 
-
-## Requirements File
-Create `requirements.txt`:
-```
-torch>=2.0.0
-ultralytics>=8.0.0
-opencv-python>=4.7.0
-```
+3. **Upload & Process Video**
+1. Click "Choose File" and select an MP4 video
+2. Click "Upload & Process"
+3. View real-time detection results
+4. Reload page to process new video
 
 
 ## Acknowledgments
