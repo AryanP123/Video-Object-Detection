@@ -49,10 +49,6 @@ A Python-based solution for detecting objects in video streams using Ultralytics
 
 1. **Clone Repository**
 
-   ```bash
-   git clone <repository_url>
-   ```
-
 2. **Choose a Deployment Method:**
 
    **Option 1: Using Kubernetes**
