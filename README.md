@@ -53,6 +53,12 @@ A Python-based solution for detecting objects in video streams using Ultralytics
 
    **Option 1: Using Kubernetes**
 
+   * **Pull Docker Image:**
+   ```bash
+   docker run ghcr.io/aryanp123/myapp:1.0.0
+   ```
+   (Can ^C after, just needs to retrieve the image)
+
    * **Apply Deployment and Service:**
      ```bash
      kubectl apply -f deployment.yaml
