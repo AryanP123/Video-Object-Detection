@@ -87,7 +87,11 @@ A Python-based solution for detecting objects in video streams using Ultralytics
 
    * **Install Dependencies:**
      ```bash
-     pip install -r requirements.txt
+     pip install --no-cache-dir \
+       flask \
+       ultralytics \
+       torch \
+       opencv-python-headless
      ```
 
    * **Start Development Server:**
